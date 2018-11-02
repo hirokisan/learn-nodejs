@@ -13,6 +13,7 @@
   "author": "hirokisan",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^6.1.0",
     "selenium-webdriver": "^4.0.0-alpha.1"
   }
 }
