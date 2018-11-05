@@ -1,28 +1,10 @@
-const dir = './files/';
-const fs = require('fs');
-const path = require('path');
+const query = require('./query');
 
-let obj = [];
+(async () => {
+  let obj = await query.get();
+  obj.forEach((item, i) => {
+    console.log(item);
+    console.log(i);
+  });
+})();
 
-fs.readdirSync(dir).forEach(file => {
-  let childObj = {};
-  let content = fs.readFileSync(dir+file, 'utf-8');
-  content = content.replace(/\r?\n/g,"");
-  let splitContent = content.split(' ');
-
-  childObj.year  = splitContent[0];
-  childObj.date = splitContent[1];
-  childObj.time = splitContent[2];
-  childObj.name = splitContent[3];
-  childObj.number  = path.basename(file, path.extname(file));
-
-  obj.push(childObj);
-});
-
-console.log(obj[0]);
-console.log(obj[0]['year']);
-
-obj.forEach((item, i) => {
-  console.log(item);
-  console.log(i);
-});
