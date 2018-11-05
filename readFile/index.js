@@ -21,3 +21,8 @@ fs.readdirSync(dir).forEach(file => {
 
 console.log(obj[0]);
 console.log(obj[0]['year']);
+
+obj.forEach((item, i) => {
+  console.log(item);
+  console.log(i);
+});
