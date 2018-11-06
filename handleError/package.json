@@ -1,0 +1,15 @@
+{
+  "name": "handleError",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "hirokisan",
+  "license": "ISC",
+  "dependencies": {
+    "child-process-promise": "^2.2.1"
+  }
+}
