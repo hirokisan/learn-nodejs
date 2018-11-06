@@ -4,19 +4,22 @@
       "type": "DateFile",
       "category": "access",
       "filename": "./error/access.log",
-      "pattern": "-yyyy-MM-dd"
+      "pattern": ".yyyy-MM-dd",
+      "keepFileExt": true
     },
     "error": {
       "type": "DateFile",
       "category": "error",
       "filename": "./error/error.log",
-      "pattern": "-yyyy-MM-dd"
+      "pattern": ".yyyy-MM-dd",
+      "keepFileExt": true
     },
     "system": {
       "type": "DateFile",
       "category": "system",
       "filename": "./error/system.log",
-      "pattern": "-yyyy-MM-dd"
+      "pattern": ".yyyy-MM-dd",
+      "keepFileExt": true
     },
     "console": {
       "type": "console"
