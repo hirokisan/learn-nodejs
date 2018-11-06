@@ -1,19 +1,19 @@
 {
   "appenders": {
     "access": {
-      "type": "file",
+      "type": "DateFile",
       "category": "access",
       "filename": "./error/access.log",
       "pattern": "-yyyy-MM-dd"
     },
     "error": {
-      "type": "file",
+      "type": "DateFile",
       "category": "error",
       "filename": "./error/error.log",
       "pattern": "-yyyy-MM-dd"
     },
     "system": {
-      "type": "file",
+      "type": "DateFile",
       "category": "system",
       "filename": "./error/system.log",
       "pattern": "-yyyy-MM-dd"
