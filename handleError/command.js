@@ -1,7 +1,7 @@
 const exec = require('child-process-promise').exec;
 
 exports.run = async () => {
-  await exec('java -version')
+  await exec('jaa -version')
     .then((result) => {
       if(result.stdout) {
         console.log('stdout', result.stdout);
@@ -12,7 +12,12 @@ exports.run = async () => {
       }
     })
     .catch((err) => {
-      throw err;
+      console.log('err happend');
+      (async () => {
+        await r2();
+        await r3();
+      })();
+      //throw err;
     });
 }
 
@@ -50,4 +55,12 @@ exports.run3 = async () => {
     });
 
   return true;
+}
+
+async function r2() {
+  console.log('this is r2');
+}
+
+async function r3() {
+  console.log('this is r3');
 }
