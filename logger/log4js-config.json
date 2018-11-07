@@ -26,12 +26,18 @@
     },
     "stdout": {
       "type": "stdout"
+    },
+    "alerts": {
+      "type": "@log4js-node/slack",
+      "token": "",
+      "channel_id": "",
+      "username": ""
     }
   },
   "categories": {
     "default": {"appenders": ["access", "console", "stdout"], "level": "INFO"},
-    "access" : {"appenders": ["access", "console", "stdout"], "level": "INFO"},
-    "system" : {"appenders": ["system", "console", "stdout"], "level": "All"},
-    "error"  : {"appenders": ["error", "console", "stdout"], "level": "ERROR"}
+    "access" : {"appenders": ["access", "console"], "level": "INFO"},
+    "system" : {"appenders": ["system", "console"], "level": "All"},
+    "error"  : {"appenders": ["error", "console"], "level": "ERROR"}
   }
 }
