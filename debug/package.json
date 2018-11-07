@@ -1,0 +1,14 @@
+{
+  "name": "debug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node inspect index.js",
+    "ch-debug": "node --inspect-brk index.js"
+  },
+  "keywords": [],
+  "author": "hirokisan",
+  "license": "ISC"
+}
