@@ -1,0 +1,17 @@
+{
+  "name": "async",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "csv-stringify": "^4.3.1",
+    "iconv-lite": "^0.4.24"
+  }
+}
