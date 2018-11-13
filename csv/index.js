@@ -1,6 +1,6 @@
-const stringify = require('csv-stringify')
-const fs = require('fs')
-const iconv = require('iconv-lite')
+const stringify = require('csv-stringify');
+const fs = require('fs');
+const iconv = require('iconv-lite');
 
 let input = [];
 let header = [];
@@ -11,5 +11,5 @@ input.push(header);
 input.push(['1', 'james']);
 
 stringify(input, (err, output) => {
-  fs.writeFileSync('./file/sample.csv', iconv.encode(output, 'utf-8'))
+  fs.writeFileSync('./file/sample.csv', iconv.encode(output, 'utf-8'));
 });
