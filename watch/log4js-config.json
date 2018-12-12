@@ -1,0 +1,33 @@
+{
+  "appenders": {
+    "access": {
+      "type": "DateFile",
+      "category": "access",
+      "filename": "./logs/access.log",
+      "pattern": ".yyyy-MM-dd",
+      "keepFileExt": true
+    },
+    "error": {
+      "type": "DateFile",
+      "category": "error",
+      "filename": "./logs/error.log",
+      "pattern": ".yyyy-MM-dd",
+      "keepFileExt": true
+    },
+    "system": {
+      "type": "fileSync",
+      "category": "system",
+      "filename": "./logs/system.log"
+    },
+    "console": {
+      "type": "console"
+    },
+    "stdout": {
+      "type": "stdout"
+    }
+  },
+  "categories": {
+    "default": {"appenders": ["access", "console", "stdout"], "level": "INFO"},
+    "system" : {"appenders": ["system", "console"], "level": "All"}
+  }
+}
